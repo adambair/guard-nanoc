@@ -1,6 +1,6 @@
 guard 'nanoc' do
-  watch('^config.yaml')
-  watch('^Rules')
-  watch('^layouts\/')
-  watch('^content\/')
+  watch(%r{^config.yaml})
+  watch(%r{^Rules})
+  watch(%r{^layouts\/})
+  watch(%r{^content\/})
 end
